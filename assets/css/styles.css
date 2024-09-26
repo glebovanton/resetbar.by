@@ -118,20 +118,6 @@ li {
     overflow: hidden !important;
 }
 
-.status {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    background-image: url(../images/loading.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: cover;
-    background-size: cover;
-    margin: -20px 0 0 -20px;
-}
-
 h1,
 h2 {
     font-family: 'TTDrugs-Thin', sans-serif;
@@ -311,21 +297,6 @@ h5 {
     height: 1px;
 }
 
-.b-ff-index-intro__btn-down {
-    display: block;
-    margin: 0 auto;
-    width: 30px;
-    height: 30px;
-    background-image: url(../images/arrow.svg);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-    -webkit-animation: btn-down 1s infinite;
-    animation: btn-down 2s infinite;
-}
-
 @keyframes btn-down {
     20% {
         transform: translate(0, 10px);
@@ -333,12 +304,6 @@ h5 {
     40% {
         transform: translate(0, 0);
     }
-}
-
-.welcome-section {
-    background: #161616 url(../images/bg-1.jpg) no-repeat center fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
 }
 
 .welcome-section .color-overlay {
@@ -563,13 +528,6 @@ object {
     background: transparent !important;
 }
 
-.testimonials {
-    background: url(../images/bg-2.jpg) no-repeat center fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
-    color: #ffffff;
-}
-
 .testimonials .color-overlay {
     padding-top: 110px;
     padding-bottom: 110px;
@@ -736,13 +694,6 @@ object {
     margin-right: 7px;
 }
 
-.download {
-    background: #232323 url('../images/bg-3.jpg') no-repeat center fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
-    color: #ffffff;
-}
-
 .download .color-overlay {
     padding-top: 110px;
     padding-bottom: 70px;
@@ -877,38 +828,6 @@ footer .copyright {
     color: white;
     padding-top: 10px;
     margin-bottom: 20px;
-}
-
-
-#upScroll {
-    border: 0;
-    cursor: pointer;
-    opacity: 1;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 48px;
-    height: 48px;
-    border-radius: 5px;
-    transition: opacity 0.5s;
-    background: rgba(255, 204, 101, 0.47) url(../images/up-32x32.png) center center no-repeat;
-    color: #d9a757;
-    text-decoration: underline;
-}
-
-#backScroll {
-    cursor: pointer;
-    opacity: 1;
-    position: fixed;
-    bottom: 20px;
-    right: 75px;
-    width: 48px;
-    height: 48px;
-    border-radius: 5px;
-    transition: opacity 0.5s;
-    background: rgba(255, 204, 101, 0.47) url(../images/back-32x32.png) center center no-repeat;
-    color: #d9a757;
-    text-decoration: underline;
 }
 
 .fade-enter-active, .fade-leave-active {

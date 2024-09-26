@@ -381,21 +381,6 @@ li {
     background: #b5894a !important;
 }
 
-.b-ff-index-intro__btn-down {
-    display: block;
-    margin: 0 auto;
-    width: 30px;
-    height: 30px;
-    background-image: url(../images/arrow.svg);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-    -webkit-animation: btn-down 1s infinite;
-    animation: btn-down 2s infinite;
-}
-
 @-webkit-keyframes btn-down {
     20% {
         -webkit-transform: translate(0, 10px);
