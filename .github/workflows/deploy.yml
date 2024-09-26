@@ -25,9 +25,9 @@ jobs:
         run: npm run generate  # Ensure 'generate' script exists in package.json
 
       - name: Deploy to FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          host: ftp://resetbar.by
+          server: ftp://resetbar.by
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: .output/public  # Adjust to where Nuxt outputs static files
