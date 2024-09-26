@@ -1,0 +1,35 @@
+name: Deploy to FTP
+
+on:
+  push:
+    branches:
+      - main  # Change to your desired branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.11.0'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Nuxt 3 static site
+        run: npm run generate  # Ensure 'generate' script exists in package.json
+
+      - name: Deploy to FTP
+        uses: sebastianpopp/ftp-action@v1.0.0
+        with:
+          host: resetbar.by
+          port: 21
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: .output/public  # Adjust to where Nuxt outputs static files
+          remote-dir: /public_html
