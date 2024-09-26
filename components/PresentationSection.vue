@@ -84,7 +84,7 @@ import CocktailsList from "~/components/CocktailsList.vue";
         <BarTable
             :table-headers="sorbetCostTableHeaders"
             title="СТОИМОСТЬ СОРБЕТ БАРА"
-            table-description="* В стоимость входит вся необходимая продукция, организация барной зоны, 2 бармена, транспортные расходы по Минску."
+            table-description="** В стоимость входит вся необходимая продукция, организация барной зоны, 2 бармена, транспортные расходы по Минску."
             :table-data="sorbetCostTableData" />
       </div>
     </section>
