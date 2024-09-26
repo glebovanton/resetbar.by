@@ -31,4 +31,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: .output/public/  # Adjust to where Nuxt outputs static files
-          server-dir: public_html
+          server-dir: public_html/
